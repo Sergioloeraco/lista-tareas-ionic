@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'LIST.TITLE' | translate }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="cambiarIdioma('es')">ES</ion-button>
+      <ion-button fill="clear" (click)="cambiarIdioma('en')">EN</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="block" routerLink="/formulario" class="ion-margin-bottom">
+    <ion-icon slot="start" name="add-circle-outline"></ion-icon>
+    {{ 'LIST.NEW_TASK' | translate }}
+  </ion-button>
+
+  <ion-list lines="none" *ngIf="tareas.length > 0; else emptyState">
+    <app-tarjeta-tarea
+      *ngFor="let tarea of tareas"
+      [tarea]="tarea"
+      (toggled)="actualizarEstado($event)"
+      (edit)="editarTarea($event)"
+      (delete)="eliminarTarea($event)"
+    ></app-tarjeta-tarea>
+  </ion-list>
+
+  <ng-template #emptyState>
+    <div class="empty-state ion-text-center ion-padding">
+      <h2>{{ 'LIST.EMPTY_TITLE' | translate }}</h2>
+      <p>{{ 'LIST.EMPTY_TEXT' | translate }}</p>
+    </div>
+  </ng-template>
+</ion-content>

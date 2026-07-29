@@ -1,0 +1,30 @@
+{
+  "HOME": {
+    "APP_NAME": "Lista de tareas",
+    "SUBTITLE": "Frameworks para el Desarrollo de Software",
+    "TITLE": "Organiza tus tareas con Ionic y Angular",
+    "DESCRIPTION": "Crea, edita y completa tareas usando almacenamiento local y una interfaz móvil y web limpia.",
+    "GO_LIST": "Ver tareas",
+    "ADD_TASK": "Nueva tarea"
+  },
+  "LIST": {
+    "TITLE": "Lista de tareas",
+    "NEW_TASK": "Agregar tarea",
+    "EMPTY_TITLE": "No hay tareas registradas",
+    "EMPTY_TEXT": "Crea tu primera tarea desde el formulario."
+  },
+  "FORM": {
+    "NEW_TITLE": "Nueva tarea",
+    "EDIT_TITLE": "Editar tarea",
+    "TITLE": "Título",
+    "DESCRIPTION": "Descripción",
+    "SAVE": "Guardar tarea",
+    "TITLE_ERROR": "El título es obligatorio y debe tener al menos 3 caracteres.",
+    "INVALID": "Corrige los errores del formulario.",
+    "CREATED": "Tarea creada correctamente.",
+    "UPDATED": "Tarea actualizada correctamente."
+  },
+  "TASKS": {
+    "EMPTY_DESCRIPTION": "Sin descripción"
+  }
+}

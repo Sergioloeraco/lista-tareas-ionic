@@ -1,0 +1,46 @@
+:host {
+	display: block;
+}
+
+.home-page {
+	--background: linear-gradient(180deg, #f7f9fc 0%, #eef4ff 100%);
+}
+
+.hero {
+	min-height: calc(100vh - 120px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.eyebrow {
+	margin: 0;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	font-size: 0.78rem;
+	color: var(--ion-color-primary);
+	font-weight: 700;
+}
+
+.hero h1 {
+	margin: 0;
+	font-size: clamp(2.2rem, 6vw, 3.8rem);
+	line-height: 1;
+	font-weight: 800;
+	color: #0f172a;
+}
+
+.summary {
+	margin: 0;
+	max-width: 34rem;
+	color: #475569;
+	font-size: 1rem;
+}
+
+.actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-top: 0.5rem;
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ (tareaIdEdicion ? 'FORM.EDIT_TITLE' : 'FORM.NEW_TITLE') | translate }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="cambiarIdioma('es')">ES</ion-button>
+      <ion-button fill="clear" (click)="cambiarIdioma('en')">EN</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="tareaForm" (ngSubmit)="guardarTarea()">
+    <div class="form-card">
+    <ion-item>
+      <ion-label position="floating">{{ 'FORM.TITLE' | translate }} <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="text" formControlName="titulo"></ion-input>
+    </ion-item>
+    <ion-note color="danger" *ngIf="tareaForm.get('titulo')?.invalid && tareaForm.get('titulo')?.touched">
+      {{ 'FORM.TITLE_ERROR' | translate }}
+    </ion-note>
+
+    <ion-item class="ion-margin-top">
+      <ion-label position="floating">{{ 'FORM.DESCRIPTION' | translate }}</ion-label>
+      <ion-textarea formControlName="descripcion" rows="3"></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="tareaForm.invalid" class="ion-margin-top">
+      {{ 'FORM.SAVE' | translate }}
+    </ion-button>
+    </div>
+
+  </form>
+</ion-content>

@@ -1,0 +1,28 @@
+:host {
+	display: block;
+}
+
+.task-item {
+	--min-height: 76px;
+	border-radius: 16px;
+	margin-bottom: 12px;
+	--background: rgba(255, 255, 255, 0.96);
+	box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.task-item--done ion-label h2,
+.task-item--done ion-label p {
+	text-decoration: line-through;
+	opacity: 0.62;
+}
+
+ion-label h2 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+ion-label p {
+	margin: 0;
+	color: var(--ion-color-medium);
+}

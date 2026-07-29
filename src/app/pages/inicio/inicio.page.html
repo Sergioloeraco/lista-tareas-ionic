@@ -1,0 +1,22 @@
+<ion-header translucent="true">
+  <ion-toolbar color="primary">
+    <ion-title>{{ 'HOME.APP_NAME' | translate }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="cambiarIdioma('es')">ES</ion-button>
+      <ion-button fill="clear" (click)="cambiarIdioma('en')">EN</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="home-page ion-padding">
+  <section class="hero">
+    <p class="eyebrow">{{ 'HOME.SUBTITLE' | translate }}</p>
+    <h1>{{ 'HOME.TITLE' | translate }}</h1>
+    <p class="summary">{{ 'HOME.DESCRIPTION' | translate }}</p>
+
+    <div class="actions">
+      <ion-button routerLink="/lista">{{ 'HOME.GO_LIST' | translate }}</ion-button>
+      <ion-button routerLink="/formulario" fill="outline">{{ 'HOME.ADD_TASK' | translate }}</ion-button>
+    </div>
+  </section>
+</ion-content>

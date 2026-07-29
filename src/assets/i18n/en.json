@@ -1,0 +1,30 @@
+{
+  "HOME": {
+    "APP_NAME": "Task list",
+    "SUBTITLE": "Software Development Frameworks",
+    "TITLE": "Organize your tasks with Ionic and Angular",
+    "DESCRIPTION": "Create, edit, and complete tasks using local storage and a clean mobile/web interface.",
+    "GO_LIST": "View tasks",
+    "ADD_TASK": "New task"
+  },
+  "LIST": {
+    "TITLE": "Task list",
+    "NEW_TASK": "Add task",
+    "EMPTY_TITLE": "No tasks registered",
+    "EMPTY_TEXT": "Create your first task from the form."
+  },
+  "FORM": {
+    "NEW_TITLE": "New task",
+    "EDIT_TITLE": "Edit task",
+    "TITLE": "Title",
+    "DESCRIPTION": "Description",
+    "SAVE": "Save task",
+    "TITLE_ERROR": "The title is required and must be at least 3 characters long.",
+    "INVALID": "Fix the form errors.",
+    "CREATED": "Task created successfully.",
+    "UPDATED": "Task updated successfully."
+  },
+  "TASKS": {
+    "EMPTY_DESCRIPTION": "No description"
+  }
+}
